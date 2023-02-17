@@ -1,0 +1,34 @@
+body{
+    background-color:lightgoldenrodyellow;
+}
+h3{
+    color: cornflowerblue;
+}
+h2{
+    color: cornflowerblue;
+    font-size: 30px;
+}
+
+
+
+a {
+    display: inline;
+    text-align: center;
+   margin-left: 1400px;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+p{
+   font-size: 20px;
+}
