@@ -21,6 +21,7 @@ hr {
 }
 
 a {
+    text-decoration:none;
     display: block;
     text-align: center;
     margin: 80px ;
