@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap');
+
+#heart {
+    position: relative;
+    width: 1000px;
+    height: 900px;
+    filter: drop-shadow(0 0 0.75rem #f2bdc1);
+    transition: all 0.5s;
+}
+
+#heart::before,
+#heart::after {
+    position: absolute;
+    content: "";
+    left: 500px;
+    top: 0;
+    width: 500px;
+    height: 800px;
+    background-color: red;
+    border-radius: 500px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    transition: all 0.5s;
+
+
+}
+
+#heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    transition: all 0.5s;
+}
+
+body {
+    background-color: #745e9b;
+}
+
+.heart {
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+
+
+
+}
+
+.heart p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    z-index: 100;
+    color: #f2bdc1;
+
+    font-family: 'Kiwi Maru', serif;
+}
+
+#content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    z-index: 100;
+    color: #f2bdc1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0;
+}
+
+#cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    z-index: 100;
+    color: #f2bdc1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0;
+
+}
+
+.heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+#heart:hover {
+
+    filter: drop-shadow(0 0 1rem red);
+
+}
+
+#heart:hover:after {
+    background-color: #f2bdc1;
+}
+
+#heart:hover:before {
+    background-color: #f2bdc1;
+}
+
+#heart:hover p {
+    color: red;
+    opacity: 1;
+    /* 加上這一行 */
+}
