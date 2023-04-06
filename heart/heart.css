@@ -68,6 +68,7 @@ body {
     z-index: 100;
     color: #f2bdc1;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0;
 }
 
 #cont {
