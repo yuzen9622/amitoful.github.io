@@ -68,22 +68,38 @@ h3 {
     text-align: center;
 }
 
-
+.content {
+    position: relative;
+    top: 20px;
+}
 
 @media screen and (max-width:700px) {
     h3 {
         font-size: 20px;
     }
 
+    .content {
+        position: relative;
+        top: 20px;
+    }
+
 }
 
 @media screen and (max-width:500px) {
     h3 {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 25px;
     }
 
     .content {
         position: relative;
-        top: 40px;
+        top: 60px;
+    }
+
+    p {
+        font-size: 18px;
     }
 }
