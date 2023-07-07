@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神公式計算</title>
+</head>
+
+<body>
+    <header>
+        <h1> 原神公式計算</h1>
+
+    </header>
+    <div class="content">
+        <h1>艾爾海森蔓激化面板</h1>
+        <div class="from">
+            <p>攻擊力</p> <input type="text" class="inpt" id="atk">
+        </div>
+        <div class="from">
+            <p>天賦等級</p> <select name="skl" id="skl">
+                <option value="0">-請選擇-</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select>
+        </div>
+        <div class="from">
+            <p>元素精通</p><input type="text" class="inpt" id="mof">
+        </div>
+        <div class="from">
+            <p>元素加成</p><input type="text" class="inpt" id="eld">
+        </div>
+        <div class="from">
+            <p>爆級傷害</p> <input type="text" class="inpt" id="bd">
+        </div>
+        <div class="from">
+            <p>等級</p><select name="lev" id="lev">
+                <option value="0">-請選擇-</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+
+            </select>
+        </div>
+        <div class="add">
+            <input type="button" id="add" value="計算">
+        </div>
+        <div class="text">
+            <P>光幕</P>
+            <input type="text" id="skilltext" value="0" readonly>
+
+            <P>大招</P>
+            <input type="text" id="qtext" value="0" readonly>
+
+        </div>
+        <sqan class="dic">
+            <P>(數值與實際均有誤差)</P>
+        </sqan>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
