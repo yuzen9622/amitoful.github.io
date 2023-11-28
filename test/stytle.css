@@ -1,0 +1,21 @@
+.input {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    width: 75%;
+    height: 60px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.all {
+    width: 700px;
+}
