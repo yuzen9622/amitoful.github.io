@@ -17,5 +17,8 @@ function calculate() {
     totall.value = total;
     realuse.value = usev;
 }
+bag.addEventListener('input', calculate);
+ml.addEventListener('input', calculate);
+all.addEventListener('input', calculate);
+del.addEventListener('input', calculate);
 
-addbtn.addEventListener('click', calculate);
