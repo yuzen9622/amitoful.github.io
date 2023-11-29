@@ -31,8 +31,12 @@ function add() {
     <td>${row3.value}捲</td>
 
 </tr>`;
+    if (use3.value == "") {
+        return;
+    } else {
+        addtable.append(html);
+    }
 
-    addtable.append(html);
     use1.value = "";
     del.value = "";
     allkg1.value = "";
