@@ -51,6 +51,10 @@ function deltee() {
     const addtable = $(".addtab");
     addtable.remove();
 }
+
+var day = new Date();
+var date = day.getFullYear() + "年" + day.getMonth() + "月";
+
 $('#btnExport').on('click', function () {
     if ($('.appen').find("tr").length > 0) {
         $("#table").table2excel({
@@ -59,7 +63,7 @@ $('#btnExport').on('click', function () {
 
             name: "Excel Document Name",
 
-            filename: "用量計算",
+            filename:`用量計算${date}`,
 
             exclude_img: true,
 
