@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css" class="css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,10 +48,13 @@
         </div>
 
         <div class="screen">
+
             <input type="button" value="顯示" id="appear">
             <input type="button" value="清除" id="delete">
+            <a id="dlink" style="display:none;"></a>
+            <input type="button" value="下載" id="btnExport" />
             <div class="appear">
-                <table class="add">
+                <table class="add" id="table">
 
                     <tr>
                         <th>收縮膜實領</td>
@@ -65,6 +69,8 @@
         </div>
 
     </div>
+    <script src="bower_components\jquery\dist\jquery.min.js"></script>
+    <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
     <script src="script.js"></script>
 </body>
 

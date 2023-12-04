@@ -51,6 +51,31 @@ function deltee() {
     const addtable = $(".addtab");
     addtable.remove();
 }
+$('#btnExport').on('click', function () {
+    if ($('.appen').find("tr").length > 0) {
+        $("#table").table2excel({
+
+            exclude: ".noExl",
+
+            name: "Excel Document Name",
+
+            filename: "用量計算",
+
+            exclude_img: true,
+
+            exclude_links: true,
+
+            exclude_inputs: true
+
+        });
+    } else {
+        return;
+    }
+
+
+});
+
+
 
 reset.addEventListener('click', deltee)
 addrow.addEventListener('click', add)
