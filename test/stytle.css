@@ -20,6 +20,12 @@ input {
     border-bottom: 1px solid #333;
 }
 
+.bag {
+    display: flex;
+}
+
+
+
 input:focus {
     border-bottom: 2px solid black;
 }
