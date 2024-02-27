@@ -8,12 +8,13 @@ var resule = document.getElementById('realuse')
 function calculate() {
     var bagv=0;
     var mlv=0;
+    var total=0;
     for (var i = 0; i < bags.length; i++) {
-         bagv += Number(bags[i].value);
-         mlv += Number(mls[i].value);
-         console.log(bagv,mlv)
+         bagv = Number(bags[i].value);
+         mlv = Number(mls[i].value);
+        total+=bagv*mlv;
     }
-        var totalValue = Number((parseFloat(bagv * mlv) / 1000).toFixed(2));
+        var totalValue = Number((parseFloat(total) / 1000).toFixed(2));
         var allv = all.value;
         var delv = del.value;
         var nov = allv - totalValue - delv;
